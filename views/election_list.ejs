@@ -1,0 +1,8 @@
+<h3>You have <%= data.length %> elections.</h3>
+<ul class="list-none">
+    <% for (var i = 0; i < data.length; i++) { %>
+        <li>
+            <%= data[i].electionName %>
+        </li>
+    <% } %>
+</ul>

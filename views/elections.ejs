@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="<%= csrfToken %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    
+    <div class="py-3">
+        <h1 class="text-xxl font-bold">Welcome</h1>
+    </div>
+    <%- include("election_list.ejs", {data: elections}) %>
+    <!-- <div class="py-3">
+        <a href="/election">View your elections</a>
+    </div> -->
+    <div class="py-3">
+        <a href="/create-election">Create new election</a>
+    </div>
+    <a href="/signout">Signout</a>
+
+            
+
+        
+   
+
+</body>
+</html>
